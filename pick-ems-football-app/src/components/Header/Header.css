@@ -1,0 +1,72 @@
+/* General styling for the header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header__container-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Styling for the select containers */
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for select options */
+select:hover {
+  border-color: #2f3b4c;
+  background-color: #f1f1f1;
+}
+
+/* Optional mobile responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .select-container {
+    width: 100%;
+    gap: 10px;
+  }
+
+  select {
+    width: 100%;
+  }
+}

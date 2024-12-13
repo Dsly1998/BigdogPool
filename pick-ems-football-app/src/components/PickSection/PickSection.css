@@ -1,0 +1,51 @@
+.pick-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.pick-section__title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.pick-section__games {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pick-section__game {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pick-section__team {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pick-section__team--selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pick-section__team--unselected {
+  background-color: #f44336;
+  color: white;
+}
+
+.pick-section__team:not(.pick-section__team--selected):not(
+    .pick-section__team--unselected
+  ):hover {
+  background-color: #e0e0e0;
+}

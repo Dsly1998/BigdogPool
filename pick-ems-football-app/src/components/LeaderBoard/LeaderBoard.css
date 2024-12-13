@@ -1,0 +1,29 @@
+/* LeaderBoard.css */
+.leaderboard {
+  margin: 20px;
+  padding: 20px;
+}
+
+.leaderboard__table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.leaderboard__table th,
+.leaderboard__table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.leaderboard__table th {
+  background-color: #f4f4f4;
+}
+
+.leaderboard__table td {
+  font-size: 14px;
+}
+
+.leaderboard__table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
